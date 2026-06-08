@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatPTG - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-box">
+            <div class="header">
+                <h1>💬 ChatPTG</h1>
+                <p>Your Personal AI Assistant</p>
+            </div>
+
+            <div class="messages" id="messages">
+                <div class="message bot-message">
+                    <p>Hello! I'm ChatPTG. I can help you with many things! Try asking me a joke, solving equations, rolling dice, and much more. What would you like to know?</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your question here..." 
+                    autocomplete="off"
+                >
+                <button id="sendBtn">Send</button>
+            </div>
+
+            <div class="suggestions">
+                <h4>Quick Examples:</h4>
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn" onclick="setSuggestion('Tell me a joke')">Joke</button>
+                    <button class="suggestion-btn" onclick="setSuggestion('What is 20 + 30?')">Math</button>
+                    <button class="suggestion-btn" onclick="setSuggestion('Roll a dice')">Dice</button>
+                    <button class="suggestion-btn" onclick="setSuggestion('Flip a coin')">Coin</button>
+                    <button class="suggestion-btn" onclick="setSuggestion('What can you do?')">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
